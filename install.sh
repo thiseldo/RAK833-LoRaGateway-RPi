@@ -39,8 +39,9 @@ GATEWAY_EUI=${GATEWAY_EUI^^} # toupper
 echo "Detected EUI $GATEWAY_EUI from $GATEWAY_EUI_NIC"
 
 # Check dependencies
-echo "Installing dependencies..."
-apt-get -y install git libftdi-dev libusb-dev
+#echo "Installing dependencies..."
+apt-get -y install git
+#apt-get -y install git libftdi-dev libusb-dev
 
 # Build libraries
 
@@ -105,7 +106,9 @@ echo
 echo "Installation completed."
 
 # Start packet forwarder as a service
-#cp ./start.sh $INSTALL_DIR/bin/
+mkdir $INSTALL_DIR/bin/
+cp $SCRIPT_DIR/ttnstart.sh $INSTALL_DIR/bin/
+chmod 755 $INSTALL_DIR/bin/ttnstart.sh
 cp $SCRIPT_DIR/ttn-gateway.service /lib/systemd/system/
 systemctl enable ttn-gateway.service
 
