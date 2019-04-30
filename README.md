@@ -1,6 +1,6 @@
 # RAK833-LoRaGateway-RPi
 
-This is a fork of the [RAK844-LoRaGateway-RPi][https://github.com/RAKWireless/RAK833-LoRaGateway-RPi] with updates for the Thing Innovations RAK833 Hat.
+This is a fork of the [RAK833-LoRaGateway-RPi][https://github.com/RAKWireless/RAK833-LoRaGateway-RPi] with updates for the Thing Innovations RAK833 Hat.
 
 Based on the latest SX1301 driver [lora_gateway](https://github.com/Lora-net/lora_gateway) v5.0.1 and semtech [packet_forwarder](https://github.com/Lora-net/packet_forwarder) v4.0.1  
 
