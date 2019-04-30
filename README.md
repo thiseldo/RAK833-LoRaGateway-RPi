@@ -1,11 +1,13 @@
 # RAK833-LoRaGateway-RPi
 
-This is a fork of the [RAK833-LoRaGateway-RPi](https://github.com/RAKWireless/RAK833-LoRaGateway-RPi)     with updates for the Thing Innovations RAK833 Hat.
+This is a fork of the [RAK833-LoRaGateway-RPi](https://github.com/RAKWireless/RAK833-LoRaGateway-RPi) with updates for the Thing Innovations RAK833 Hat.
 
 Based on the latest SX1301 driver [lora_gateway](https://github.com/Lora-net/lora_gateway) v5.0.1 and semtech [packet_forwarder](https://github.com/Lora-net/packet_forwarder) v4.0.1  
 
-Note: This project is only used for the SPI interface of RAK833 + Raspberry Pi:
-The reset GPIO pin definition SX1301_RESET_BCM_PIN macro in the ttnstart.sh file is set to pin 25 for this board.
+Notes: 
+
+     * This project is only for the SPI interface of RAK833 + Raspberry Pi.
+     * The reset GPIO pin definition SX1301_RESET_BCM_PIN macro in the ttnstart.sh file is set to pin 25.
 
 ##	Installation procedure
 
