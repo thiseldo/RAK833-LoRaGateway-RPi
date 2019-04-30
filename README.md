@@ -9,16 +9,20 @@ But you should notice the reset GPIO pin definition which is the value of SX1301
 
 ##	Installation procedure
 
-step1 : Download and install [Raspbian Stretch LITE](https://www.raspberrypi.org/downloads/raspbian/)
+Step 1 : Download and install [Raspbian Stretch LITE](https://www.raspberrypi.org/downloads/raspbian/)
 
       * Ensure SPI is enabled
       * Serial console is disabled but UART is enabled
       * SSH Enabled
 
-step2 : Clone the installer and start the installation
+Step 2 : Clone the installer and start the installation
 
+      $ sudo apt-get install git
       $ git clone https://github.com/thiseldo/RAK833-LoRaGateway-RPi.git ~/rak833-loragateway
       $ cd ~/rak833-loragateway
       $ sudo ./install.sh
 
-step3 : Now you have a running gateway after restart! in additon you can check the log info at /var/log/syslog.
+Step 3 : Now you have a running gateway after restart! in additon you can check the log info at /var/log/syslog.
+
+Step 4 : Register gateway on The Things Network console https://console.thethingsnetwork.org/gateways/register
+
