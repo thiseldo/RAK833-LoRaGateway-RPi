@@ -94,7 +94,7 @@ popd
 
 LOCAL_CONFIG_FILE=$INSTALL_DIR/packet_forwarder/lora_pkt_fwd/local_conf.json
 
-echo -e "{\n\t\"gateway_conf\": {\n\t\t\"gateway_ID\": \"$GATEWAY_EUI\",\n\t\t\"server_address\": \"router.eu.thethings.network\",\n\t\t\"serv_port_up\": 1700,\n\t\t\"serv_port_down\": 1700,\n\t\t\"serv_enabled\": true,\n\t\t\"ref_latitude\": 0,\n\t\t\"ref_longitude\": 0,\n\t\t\"ref_altitude\": 0 \n\t}\n}" >$LOCAL_CONFIG_FILE
+echo -e "{\n\t\"gateway_conf\": {\n\t\t\"gateway_ID\": \"$GATEWAY_EUI\",\n\t\t\"server_address\": \"router.eu.thethings.network\",\n\t\t\"serv_port_up\": 1700,\n\t\t\"serv_port_down\": 1700,\n\t\t\"serv_enabled\": true,\n\t\t\"gps_tty_path\": \"/dev/ttyAMA0\",\n\t\t\"ref_latitude\": 0,\n\t\t\"ref_longitude\": 0,\n\t\t\"ref_altitude\": 0 \n\t}\n}" >$LOCAL_CONFIG_FILE
 
 echo "Gateway EUI is: $GATEWAY_EUI"
 echo "The hostname is: $NEW_HOSTNAME"
