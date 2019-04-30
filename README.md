@@ -9,7 +9,8 @@ But you should notice the reset GPIO pin definition which is the value of SX1301
 
 ##	Installation procedure
 
-step1 : Download and install [Raspbian Stretch LITE](https://www.raspberrypi.org/downloads/raspbian/) 
+step1 : Download and install [Raspbian Stretch LITE](https://www.raspberrypi.org/downloads/raspbian/)
+
       * Ensure SPI is enabled
       * Serial console is disabled but UART is enabled
       * SSH Enabled
